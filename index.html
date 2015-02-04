@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Timely clock from svg.clock.js</title>
+    <style type="text/css" media="screen">
+      html, body { background-color: #ffffff; width: 100%; height: 100%; overflow: visible; margin: 0; padding: 0;}
+      html, a { color: #333333; }
+      #canvas { position: relative; height: 80%; top: 10%; margin: 0 5% 0 5%; }
+    </style>   
+  </head>
+  
+  <body>
+    <figure id="canvas"></figure>
+  </body>
+  
+  <script src="lib/svg.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="svg.clock.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    SVG('canvas').clock('100%').start()
+  </script>
+  
+</html>
